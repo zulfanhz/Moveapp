@@ -13,13 +13,13 @@ const Navbar = () => {
 
   return (
     <div className='w-full h-[80px] bg-bg-primary sticky top-0 z-10'>
-        <div className='md:max-w-[1480px] max-w-[600px] m-auto w-full h-full flex justify-around items-center'>
+        <div className='lg:max-w-[1480px] md:max-w[1280px] max-w-[600px] m-auto w-full h-full flex justify-around items-center'>
           
             <img src={logo} alt="logo" className='h-[30px]'/>
            
-            <div className='hidden md:flex items-center'>
+            <div className='hidden lg:flex items-center'>
             
-                <ul className='flex gap-12 text-gray-300 font-medium cursor-pointer'>
+                <ul className='flex lg:gap-6 md:gap-2 text-gray-300 font-medium cursor-pointer'>
                     <li className='hover:text-white'>
                         <Link activeClass="active" smooth spy to="first">Login & Register</Link></li>
                     <li className='hover:text-white'>
@@ -34,17 +34,17 @@ const Navbar = () => {
                 </ul>
                 
             </div>
-            <div className='hidden md:flex'>
+            <div className='hidden lg:flex'>
                 <button className='px-6 py-3 rounded-full text-white font-medium bg-green-600'>Buy</button>
             </div>
 
-            <div className='md:hidden text-white text-3xl' onClick={handleClick}>
+            <div className='lg:hidden text-white text-3xl' onClick={handleClick}>
               {toggle ? <HiOutlineX /> : <HiMenu />}
             </div>
         </div>
 
             {/* ---------- Mobile view ----------------- */}
-        <div className={toggle?'absolute z-10 p-5 bg-white w-full px-0 md:hidden':'hidden'}>
+        <div className={toggle?'absolute z-10 p-5 bg-white w-full px-0 lg:hidden':'hidden'}>
         <ul className='text-center'>
                     <li className='p-3 hover:bg-gray-100'>Login & Register</li>
                     <li className='p-3 hover:bg-gray-100'>Homepages</li>

@@ -15,7 +15,7 @@ const Register = () => {
       <div className='md:max-w-[1480px] m-auto max-w-[600px]'>
         <div className='relative'>
           <h1 className='text-center text-9xl font-bold text-gray-800'>01</h1>
-          <h2 className='absolute top-[43%] left-[37%] md:top-[45%] md:left-[43%] text-white md:text-2xl text-lg font-bold'>Login & Register</h2>
+          <h2 className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white md:text-2xl text-lg font-bold'>Login & Register</h2>
         </div>
         
         <div className='grid md:grid-cols-2 grid-cols-1 gap-12 mx-8 mt-20'>
