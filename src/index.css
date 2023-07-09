@@ -4,8 +4,5 @@
 
 
 .active {
-  border-bottom: solid;
-  border-bottom-color: blueviolet;
-  font-weight: bold;
-  color: white;
+  @apply border-b-4 border-b-violet-600 text-white py-7
 }

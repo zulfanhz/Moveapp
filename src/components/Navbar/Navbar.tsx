@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className='w-full h-[80px] bg-bg-primary sticky top-0 z-10'>
-        <div className='lg:max-w-[1480px] md:max-w[1280px] max-w-[600px] m-auto w-full h-full flex justify-around items-center'>
+        <div className='lg:max-w-[1480px] md:max-w[1280px] max-w-[600px] m-auto w-full h-full flex md:justify-between justify-around lg:justify-around items-center'>
           
             <img src={logo} alt="logo" className='h-[30px]'/>
            
@@ -24,13 +24,20 @@ const Navbar = () => {
                         <Link activeClass="active" smooth spy to="first">Login & Register</Link></li>
                     <li className='hover:text-white'>
                         <Link activeClass="active" smooth spy to="second">Homepages</Link></li>
-                    <li className='hover:text-white'>About Team & Careers</li>
-                    <li className='hover:text-white'>Case Studies</li>
-                    <li className='hover:text-white'>Blog</li>
-                    <li className='hover:text-white'>Portfolio</li>
-                    <li className='hover:text-white'>Pricing Plans</li>
-                    <li className='hover:text-white'>Contacts</li>
-                    <li className='hover:text-white'>Misc</li>       
+                    <li className='hover:text-white'>
+                        <Link activeClass="active" smooth spy to="third">About Team & Careers</Link></li>
+                    <li className='hover:text-white'>
+                        <Link activeClass="active" smooth spy to="four"> Case Studies</Link></li>
+                    <li className='hover:text-white'>
+                        <Link activeClass="active" smooth spy to="five">Blog</Link></li>
+                    <li className='hover:text-white'>
+                        <Link activeClass="active" smooth spy to="six">Portfolio</Link></li>
+                    <li className='hover:text-white'>
+                        <Link activeClass="active" smooth spy to="seven">Pricing Plans</Link></li>
+                    <li className='hover:text-white'>
+                        <Link activeClass="active" smooth spy to="eight">Contacts</Link></li>
+                    <li className='hover:text-white'>
+                        <Link activeClass="active" smooth spy to="nine">Misc</Link></li>       
                 </ul>
                 
             </div>
